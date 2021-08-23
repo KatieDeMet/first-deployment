@@ -3,13 +3,14 @@ const langButton = document.getElementById('langButton')
 const devButton = document.getElementById('devButton')
 const infoButton = document.getElementById('infoButton')
 const displayContainer = document.getElementById('displayContainer')
+const baseURL = ""
 
 
 const displayText = (event) => {
     let id = event.target.id
     displayContainer.innerHTML = ``
     if(id === 'langButton') {
-        axios.get('http://localhost:7272/katie/languages')
+        axios.get(baseURL+'/katie/languages')
             .then(res => {
                 let newPara = document.createElement('p')
                 newPara.innerHTML = res.data
