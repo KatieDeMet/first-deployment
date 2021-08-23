@@ -1,13 +1,13 @@
 const express = require('express')
-// const cors = require('cors')
+const cors = require('cors')
 const path = require('path')
 const cntl = require('./controller')
 const app = express()
 const port = process.env.PORT || 5151
 
-// app.use(express.json());
+app.use(express.json());
 app.use(express.static('client'))
-// app.use(cors())
+app.use(cors())
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/index.html'))
