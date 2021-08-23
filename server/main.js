@@ -3,7 +3,7 @@ const cors = require('cors')
 const path = require('path')
 const cntl = require('./controller')
 const app = express()
-const port =  7272
+const port =  process.env.PORT || 7272
 
 app.use(express.json());
 app.use(express.static('client'))
