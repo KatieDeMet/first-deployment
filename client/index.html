@@ -5,9 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata&effect=3d">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Azeret+Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chakra+Petch">
 </head>
 <body>
-    <h1>Katie's Page</h1>
+    <header>
+        <h1>Katie's Page</h1>
+    </header>
+    <main>
+        <section id ="mainContent">
+            <div id="imgContainer">
+               <p class="blueBraces">{</p>
+                <img src="assets/self.jpg" id="mePic">
+                <p class="blueBraces">}</p>
+            </div>
+            <div id="displayContainer">
+            </div>
+        </section>
+        <aside id="buttonContainer">
+            <h2>Skills</h2>
+            <button class="myButton" id="langButton">Languages</button>
+            <button class="myButton" id="devButton">DevOps Tools</button>
+            <button class="myButton" id="infoButton">A Little More About Me</button>
+            <h2>Links</h2>
+            <a href="https://github.com/KatieDeMet">Github</a>
+            <a href="https://www.linkedin.com/in/katie-demet-442b5b20b/">LinkedIn</a>
+        </aside>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js" defer></script>
 </body>
 </html>
