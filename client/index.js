@@ -19,7 +19,7 @@ const displayText = (event) => {
             })
             .catch(err => console.log(err))
     } else if (id === 'devButton') {
-        axios.get('http://localhost:7272/katie/devops')
+        axios.get(baseURL+'/katie/devops')
             .then(res => {
                 let newPara = document.createElement('p')
                 newPara.innerHTML = res.data
@@ -28,7 +28,7 @@ const displayText = (event) => {
             })
             .catch(err => console.log(err))
     } else if(id === 'infoButton') {
-        axios.get('http://localhost:7272/katie/more')
+        axios.get(baseURL+'/katie/more')
             .then(res => {
                 let newPara = document.createElement('p')
                 newPara.innerHTML = res.data
